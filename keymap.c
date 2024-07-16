@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *            `----------------------------------'           '------''---------------------------'
      */
 
-[_LIMBO] =  LAYOUT(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC, KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLS, KC_LCTL, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_MUTE, KC_MPLY, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_CAPS, KC_LALT, KC_LGUI, MO(1), KC_SPC, KC_ENT, MO(1), KC_RALT, KC_MINS, KC_EQL),
+[_LIMBO] =  LAYOUT(KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC, KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLS, KC_LSFT, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_LCTL, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_MUTE, KC_MPLY, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_CAPS, KC_LALT, KC_LGUI, MO(1), KC_SPC, KC_ENT, MO(1), KC_RALT, KC_MINS, KC_EQL),
 
 /*
  * LUST
@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 
-[_LUST] = LAYOUT(KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_DEL, KC_TAB, KC_HOME, KC_UP, KC_NO, KC_END, KC_F11, KC_F12, KC_NO, KC_UP, KC_NO, KC_PSCR, KC_LBRC, KC_LCTL, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO, KC_BRID, KC_BRIU, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO, KC_RBRC, KC_LSFT, KC_UNDO, KC_CUT, KC_COPY, KC_PSTE, KC_MPLY, KC_MUTE, KC_MPLY, KC_NO, KC_PGUP, KC_PGDN, KC_NO, KC_INS, KC_RSFT, KC_CAPS, KC_TRNS, KC_LGUI, KC_TRNS, KC_SPC, KC_ENT, KC_TRNS, KC_RGUI, KC_MINS, KC_EQL),
+[_LUST] = LAYOUT(KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_DEL, KC_TAB, KC_HOME, KC_UP, KC_NO, KC_END, KC_F11, KC_F12, KC_NO, KC_UP, KC_NO, KC_PSCR, KC_LBRC, KC_LSFT, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO, KC_BRID, KC_BRIU, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO, KC_RBRC, KC_LCTL, KC_PGDN, KC_NO, KC_PGUP, KC_NO, KC_NO, KC_MUTE, KC_MPLY, KC_NO, KC_NO, KC_NO, KC_NO, KC_INS, KC_RSFT, KC_CAPS, KC_TRNS, KC_LGUI, KC_TRNS, KC_SPC, KC_ENT, KC_TRNS, KC_RALT, KC_MINS, KC_EQL),
 
 /* LOWER
  * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -143,7 +143,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* 32 * 32 logo */
 static void render_logo(void) {
-    static const char PROGMEM hell_logo[] = {255,  3,253,253, 13, 13,109,109,237,237,  1,  1,253,253,  1,  1,  1,  1,  1,  1,  1,  1,253,253,205,205,205,205,253,253,  3,255,255,  0,243,243,  3,  3,  3,  3,  3,  3,  0,  0, 51, 19,  3,131,131,  3, 19, 51,  0,  0,243,243,  0,  0,  0,  0,  0,  0,  0,255,255,  0,207,207,204,204,204,204,204,204,  0,  0,204,200,  0,  1,  1,  0,  8, 12,  0,  0,207,207,204,204,204,204,204,204,  0,255,255,192,191,191,140,140,140,140,143,143,128,128,191,191,176,176,176,176,176,176,128,128,191,191,176,176,182,182,190,190,192,255,};
+    static const char PROGMEM hell_logo[] = {255,  3,253,253, 13, 13,109,109,237,237,  1,  1,253,253,  1,  1,  1,  1,  1,  1,  1,  1,253,253,205,205,205,205,253,253,  3,255,255,  0, 51, 51, 51,243,243, 51, 51, 51,  0,  0,179,147,131,243,243,131,147,179,  0,  0,243,243, 48, 48, 48, 48, 48, 48,  0,255,255,  0,204,204,204,207,207,204,204,204,  0,  0,205,201,193,207,207,193,201,205,  0,  0,207,207,204,204,204,204,204,204,  0,255,255,192,191,191,140,140,140,140,143,143,128,128,191,191,176,176,182,182,190,190,128,128,191,191,176,176,176,176,191,191,192,255};
 
     oled_write_raw_P(hell_logo, sizeof(hell_logo));
 }
@@ -298,7 +298,7 @@ static void print_logo_narrow(void) {
 static void print_status_narrow(void) {
     /* Print current mode */
     oled_set_cursor(0, 0);
-        oled_write("v1.10", false);
+        oled_write("v1.15", false);
 
     oled_set_cursor(0, 2);
 
@@ -322,10 +322,10 @@ static void print_status_narrow(void) {
 
     switch (get_highest_layer(layer_state)) {
         case _LIMBO:
-            oled_write("QWRT", false);
+            oled_write("TROPO", false);
             break;
         case _LUST:
-            oled_write("NAV  ", false);
+            oled_write("STRAT", false);
             break;
         case _RAISE:
             oled_write("Raise", false);   
@@ -342,13 +342,13 @@ static void print_status_narrow(void) {
 
      /* Nova */
     oled_set_cursor(0, 8);
-    oled_write("NOVA", false);
+    oled_write("NOVA!", false);
 
     /* caps lock */
     oled_set_cursor(0, 10);
-    oled_write("CAPS ", led_usb_state.caps_lock);
+    oled_write("CAPS!", led_usb_state.caps_lock);
 
-    /* KEYBOARD PET RENDER START */
+    /* KEYBOARD NOVA PET RENDER START */
 
     render_nova(0, 13);
 
